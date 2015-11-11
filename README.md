@@ -4,9 +4,11 @@ Dieses Repository enthält die Anwendungen die im Rahmen der Vorlesung Bildverar
 # Prequesites
 You need to install opencv on your computer before compiling this application.
 
+[OpenCV Documentation](http://docs.opencv.org/2.4/doc/tutorials/introduction/table_of_content_introduction/table_of_content_introduction.html)
+
 # Build
 ```sh
-  cmake .
-  make
-  ./BV-Zusatzpunkte
+cmake .
+make
+./BV-Zusatzpunkte
 ```
