@@ -1,1 +1,2 @@
-/Users/david/Desktop/Zeugs/Development/GCC/Projects/BV-Zusatzpunkte/CMakeFiles/BV-Zusatzpunkte.dir
+/Users/david/Desktop/Zeugs/Development/GCC/Projects/BV-Zusatzpunkte/CMakeFiles/hist.dir
+/Users/david/Desktop/Zeugs/Development/GCC/Projects/BV-Zusatzpunkte/CMakeFiles/dct.dir

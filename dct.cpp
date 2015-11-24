@@ -56,6 +56,7 @@ int main(int argc, char ** argv)
 
     imshow("Input Image"       , I   );
     imshow("spectrum magnitude", magI);
+		moveWindow("spectrum magnitude",400,0);
     waitKey();
 
     return 0;

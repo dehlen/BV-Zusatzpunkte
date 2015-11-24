@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BV-Zusatzpunkte
+# Target rules for targets named dct
 
 # Build rule for target.
-BV-Zusatzpunkte: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BV-Zusatzpunkte
-.PHONY : BV-Zusatzpunkte
+dct: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dct
+.PHONY : dct
 
 # fast build rule for target.
-BV-Zusatzpunkte/fast:
-	$(MAKE) -f CMakeFiles/BV-Zusatzpunkte.dir/build.make CMakeFiles/BV-Zusatzpunkte.dir/build
-.PHONY : BV-Zusatzpunkte/fast
+dct/fast:
+	$(MAKE) -f CMakeFiles/dct.dir/build.make CMakeFiles/dct.dir/build
+.PHONY : dct/fast
+
+#=============================================================================
+# Target rules for targets named hist
+
+# Build rule for target.
+hist: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hist
+.PHONY : hist
+
+# fast build rule for target.
+hist/fast:
+	$(MAKE) -f CMakeFiles/hist.dir/build.make CMakeFiles/hist.dir/build
+.PHONY : hist/fast
 
 dct.o: dct.cpp.o
 
@@ -129,7 +142,7 @@ dct.o: dct.cpp.o
 
 # target to build an object file
 dct.cpp.o:
-	$(MAKE) -f CMakeFiles/BV-Zusatzpunkte.dir/build.make CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o
+	$(MAKE) -f CMakeFiles/dct.dir/build.make CMakeFiles/dct.dir/dct.cpp.o
 .PHONY : dct.cpp.o
 
 dct.i: dct.cpp.i
@@ -138,7 +151,7 @@ dct.i: dct.cpp.i
 
 # target to preprocess a source file
 dct.cpp.i:
-	$(MAKE) -f CMakeFiles/BV-Zusatzpunkte.dir/build.make CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.i
+	$(MAKE) -f CMakeFiles/dct.dir/build.make CMakeFiles/dct.dir/dct.cpp.i
 .PHONY : dct.cpp.i
 
 dct.s: dct.cpp.s
@@ -147,8 +160,35 @@ dct.s: dct.cpp.s
 
 # target to generate assembly for a file
 dct.cpp.s:
-	$(MAKE) -f CMakeFiles/BV-Zusatzpunkte.dir/build.make CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.s
+	$(MAKE) -f CMakeFiles/dct.dir/build.make CMakeFiles/dct.dir/dct.cpp.s
 .PHONY : dct.cpp.s
+
+hist.o: hist.cpp.o
+
+.PHONY : hist.o
+
+# target to build an object file
+hist.cpp.o:
+	$(MAKE) -f CMakeFiles/hist.dir/build.make CMakeFiles/hist.dir/hist.cpp.o
+.PHONY : hist.cpp.o
+
+hist.i: hist.cpp.i
+
+.PHONY : hist.i
+
+# target to preprocess a source file
+hist.cpp.i:
+	$(MAKE) -f CMakeFiles/hist.dir/build.make CMakeFiles/hist.dir/hist.cpp.i
+.PHONY : hist.cpp.i
+
+hist.s: hist.cpp.s
+
+.PHONY : hist.s
+
+# target to generate assembly for a file
+hist.cpp.s:
+	$(MAKE) -f CMakeFiles/hist.dir/build.make CMakeFiles/hist.dir/hist.cpp.s
+.PHONY : hist.cpp.s
 
 # Help Target
 help:
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BV-Zusatzpunkte"
+	@echo "... hist"
+	@echo "... dct"
 	@echo "... dct.o"
 	@echo "... dct.i"
 	@echo "... dct.s"
+	@echo "... hist.o"
+	@echo "... hist.i"
+	@echo "... hist.s"
 .PHONY : help
 
 

@@ -9,7 +9,6 @@ CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o: /usr/local/include/opencv2/core.hpp
 CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o: /usr/local/include/opencv2/core/affine.hpp
 CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o: /usr/local/include/opencv2/core/base.hpp
 CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o: /usr/local/include/opencv2/core/bufferpool.hpp
-CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o: /usr/local/include/opencv2/core/core.hpp
 CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o: /usr/local/include/opencv2/core/cvdef.h
 CMakeFiles/BV-Zusatzpunkte.dir/dct.cpp.o: /usr/local/include/opencv2/core/cvstd.hpp
