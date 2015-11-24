@@ -36,8 +36,8 @@ void showHistogram(Mat& img)
 		}
 	}
 
-	const char* wname[3] = { "blue", "green", "red" };
-	Scalar colors[3] = { Scalar(255,0,0), Scalar(0,255,0), Scalar(0,0,255) };
+	const char* wname[4] = { "histogram blue", "histogram green", "histogram red" };
+	Scalar colors[4] = { Scalar(255,0,0), Scalar(0,255,0), Scalar(0,0,255) };
 
 	vector<Mat> canvas(nc);
 
@@ -55,8 +55,7 @@ void showHistogram(Mat& img)
 				1, 8, 0
 			);
 		}
-
-		imshow(nc == 1 ? "value" : wname[i], canvas[i]);
+		imshow(nc == 1 ? "histogram grey" : wname[i], canvas[i]);
 		moveWindow(wname[i], 0, i*200);
 	}
 }
@@ -64,13 +63,20 @@ void showHistogram(Mat& img)
 int main(int argc, char ** argv)
 {
   const char* filename = argc >=2 ? argv[1] : "lena.jpg";
+	
 	Mat src = imread(filename);
 	if (src.empty()) {
 		return -1;
 	}
 	showHistogram(src);
-	imshow("src", src);
-	moveWindow("src",200,0);
+	imshow("src image", src);
+	moveWindow("src image",200,0);
+	
+	Mat gray;
+	cvtColor(src, gray, CV_BGR2GRAY);
+	showHistogram(gray);
+	imshow("gray image", gray);
+	moveWindow("gray image",400,0);
 	waitKey(0);
 	return 0;
 }
