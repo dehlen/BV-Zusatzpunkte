@@ -55,7 +55,7 @@ void showHistogram(Mat& img)
 				1, 8, 0
 			);
 		}
-		imshow(nc == 1 ? "histogram grey" : wname[i], canvas[i]);
+		imshow(nc == 1 ? "histogram gray" : wname[i], canvas[i]);
 		moveWindow(wname[i], 0, i*200);
 	}
 }
