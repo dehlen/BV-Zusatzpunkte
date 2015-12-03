@@ -1,8 +1,0 @@
-cmake_minimum_required(VERSION 2.8)
-project( BV-Zusatzpunkte )
-find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable( dct dct.cpp )
-add_executable( hist hist.cpp )
-target_link_libraries( dct ${OpenCV_LIBS} )
-target_link_libraries( hist ${OpenCV_LIBS} )
